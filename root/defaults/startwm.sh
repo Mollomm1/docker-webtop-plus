@@ -17,8 +17,8 @@ if [ ! -f "/config/.firstsetup" ]; then
     sudo rm -rf /config/.cache # fix firefox
     cp /defaults/.bashrc /config/.bashrc
     mkdir -p /config/.config/gtk-3.0/ /config/.config/gtk-4.0/
-    echo -e "[Settings]\ngtk-application-prefer-dark-theme=1" > ~/.config/gtk-4.0/settings.ini # fix dark theme
-    echo -e "[Settings]\ngtk-application-prefer-dark-theme=1" > ~/.config/gtk-3.0/settings.ini # fix dark theme
+    echo -e "[Settings]\ngtk-application-prefer-dark-theme=1\ngtk-icon-theme-name=Yaru-dark\ngtk-theme-name=Yaru-dark\ngtk-cursor-theme-name=Yaru\ngtk-sound-theme-name=Yaru" > ~/.config/gtk-4.0/settings.ini # fix dark theme
+    echo -e "[Settings]\ngtk-application-prefer-dark-theme=1\ngtk-icon-theme-name=Yaru-dark\ngtk-theme-name=Yaru-dark\ngtk-cursor-theme-name=Yaru\ngtk-sound-theme-name=Yaru" > ~/.config/gtk-3.0/settings.ini # fix dark theme
     mkdir /config/Desktop /config/Documents /config/Downloads /config/Music /config/Pictures /config/Public /config/Templates /config/Videos
     chmod 755 /config/Desktop /config/Documents /config/Downloads /config/Music /config/Pictures /config/Public /config/Templates /config/Videos
     cp /defaults/README.md /config/Desktop/README.md
