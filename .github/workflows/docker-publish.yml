@@ -9,11 +9,11 @@ on:
   schedule:
     - cron: '18 8 * * 1,4'
   push:
-    branches: [ "ubuntu-2204" ]
+    branches: [ "ubuntu-2404" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "master-2204" ]
+    branches: [ "master-2404" ]
 
 env:
   # Use docker.io for Docker Hub if empty
